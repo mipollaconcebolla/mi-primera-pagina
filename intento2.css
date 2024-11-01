@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+
+
+
+.terminal-loader {
+  background: #34495e;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  --color: rgba(255, 50, 50, 0.8);
+  background-color: rgb(0, 0, 0);
+  background-size: 40px 40px;
+  background-image: linear-gradient(45deg, var(--color), transparent 40%),
+      linear-gradient(-90deg, var(--color), transparent 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.terminal-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.terminal-controls .control {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.terminal-controls .control.minimize {
+  background-color: yellow;
+}
+
+.terminal-controls .control.maximize {
+  background-color: green;
+}
+
+.content .text {
+  font-size: 16px;
+}
